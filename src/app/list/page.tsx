@@ -1,9 +1,9 @@
 import { getServerSession } from 'next-auth';
 import { Col, Container, Row, Table } from 'react-bootstrap';
 import { prisma } from '@/lib/prisma';
-import StuffItem from '@/components/StuffItem';
 import { loggedInProtectedPage } from '@/lib/page-protection';
 import authOptions from '@/lib/authOptions';
+import StuffItem from '@/components/StuffItem';
 
 /** Render a list of stuff for the logged in user. */
 const ListPage = async () => {
